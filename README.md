@@ -1,22 +1,22 @@
 # volcanic-lahar-risk-simulation
 "Sistema de modelamiento hidrológico en Python para la detección de áreas de riesgo por lahares en el Volcán Calbuco, integrando la ecuación de rugosidad de Manning y análisis multivariable."
-# 🌋 Modelamiento Geoespacial de Riesgo por Lahares: Volcán Calbuco
+#  Modelamiento Geoespacial de Riesgo por Lahares: Volcán Calbuco
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Finalizado-green.svg)
 ![Area](https://img.shields.io/badge/Análisis-Geomorfológico-orange.svg)
 
-## 📝 Descripción del Proyecto
+##  Descripción del Proyecto
 Este proyecto presenta un sistema automatizado en **Python** para la delimitación de zonas de peligro ante flujos de detritos (lahares) en el Volcán Calbuco, Región de Los Lagos, Chile. 
 
 A diferencia de los mapas de riesgo tradicionales, este modelo no solo analiza la pendiente, sino que integra variables dinámicas de **acumulación de masa** y **resistencia física del terreno**, permitiendo identificar con alta precisión las rutas críticas de evacuación y la infraestructura vulnerable (como la localidad de Ensenada).
 
-## 🚀 Características Principales
+##  Características Principales
 - **Automatización Completa**: El flujo de trabajo procesa desde el ráster de elevación (DEM) bruto hasta el mapa interactivo final.
 - **Física Aplicada**: Implementación de la **Ecuación de Manning** para modelar la fricción superficial.
 - **Visor Interactivo**: Generación de un visor geográfico en formato HTML para la toma de decisiones dinámica.
 
-## 🧠 Metodología Científica
+##  Metodología Científica
 
 ### 1. Procesamiento Hidrológico
 Se utilizó un Modelo Digital de Elevación (DEM) de 12.5m de resolución. El proceso incluyó:
@@ -32,16 +32,16 @@ Para dar realismo físico, se asignaron coeficientes de fricción basados en la 
 ### 3. Índice Combinado de Peligro (ICP)
 El riesgo se calculó mediante la integración de la energía cinética (pendiente) y la masa potencial (acumulación), normalizada por el coeficiente de resistencia.
 
-## 📊 Resultados Técnicos
+##  Resultados Técnicos
 - **Zonificación de Riesgo Extremo**: Se delimitaron **3.03 km²** de afectación crítica inmediata.
 - **Validación Territorial**: El modelo identifica con éxito las quebradas naturales que desembocan hacia el Lago Llanquihue, amenazando rutas de conectividad regional.
 
-## 🛠️ Stack Tecnológico
+##  Stack Tecnológico
 - **Análisis de Datos**: `Numpy`, `Rasterio`
 - **Modelado Hidrológico**: `Pysheds`
 - **Visualización Cartográfica**: `Matplotlib`, `Folium` (Mapas base de ESRI World Imagery y OpenStreetMap).
 
-## 📁 Estructura del Repositorio
+##  Estructura del Repositorio
 ```text
 ├── data/               # Modelos Digitales de Elevación (.tif)
 ├── scripts/            # Código fuente en Python
